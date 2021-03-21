@@ -1,0 +1,17 @@
+{
+  "name": "@gatsby-example-monorepo/components",
+  "private": true,
+  "version": "0.0.0",
+  "devDependencies": {
+    "gatsby": "^3.1.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "theme-ui": "next"
+  },
+  "peerDependencies": {
+    "gatsby": "^3.1.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "theme-ui": "next"
+  }
+}

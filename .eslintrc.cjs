@@ -45,7 +45,7 @@ module.exports = {
       ],
       parserOptions: {
         tsconfigRootDir: __dirname,
-        project: ["./sites/*/tsconfig.json"],
+        project: ["./packages/*/tsconfig.json", "./sites/*/tsconfig.json"],
       },
       rules: {
         "react/prop-types": "off",

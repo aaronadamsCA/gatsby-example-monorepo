@@ -15,5 +15,8 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "theme-ui": "next"
+  },
+  "devDependencies": {
+    "gatsby-plugin-tsconfig-paths": "^1.0.2"
   }
 }

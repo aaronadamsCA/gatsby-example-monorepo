@@ -6,6 +6,10 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "jsx": "preserve",
-    "sourceMap": true
+    "sourceMap": true,
+    "baseUrl": "./",
+    "paths": {
+      "@gatsby-example-monorepo/*": ["packages/*/src"]
+    }
   }
 }

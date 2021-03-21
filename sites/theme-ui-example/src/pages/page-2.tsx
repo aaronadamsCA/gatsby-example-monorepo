@@ -5,12 +5,12 @@ import { Link } from "@gatsby-example-monorepo/components";
 const IndexPage: FC = () => (
   <Container>
     <Box as="header">
-      <Heading as="h1">Theme UI Gatsby Example</Heading>
+      <Heading as="h1">Page 2</Heading>
     </Box>
     <Box as="main">
-      <Paragraph>This is an example page.</Paragraph>
+      <Paragraph>This is another example page.</Paragraph>
       <Paragraph>
-        <Link to="page-2">Go to page 2</Link>
+        <Link to="/">Return home</Link>
       </Paragraph>
     </Box>
   </Container>
