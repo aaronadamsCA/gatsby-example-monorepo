@@ -1,0 +1,19 @@
+{
+  "name": "theme-ui-example",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "develop": "INTERNAL_STATUS_PORT=40000 gatsby develop --port 8000",
+    "clean": "gatsby clean",
+    "build": "gatsby build",
+    "serve": "gatsby serve --port 8000"
+  },
+  "dependencies": {
+    "gatsby": "^3.1.1",
+    "gatsby-plugin-gatsby-cloud": "^2.1.0",
+    "gatsby-plugin-theme-ui": "next",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "theme-ui": "next"
+  }
+}

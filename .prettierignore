@@ -1,0 +1,6 @@
+# Gatsby cache directory and build directory
+.cache/
+public/
+
+# Dependency directories
+node_modules/

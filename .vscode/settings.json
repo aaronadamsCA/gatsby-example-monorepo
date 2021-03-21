@@ -1,0 +1,20 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "javascript.suggestionActions.enabled": false,
+  "eslint.codeActionsOnSave.mode": "problems",
+  "eslint.onIgnoredFiles": "warn",
+  "eslint.workingDirectories": ["."],
+  "eslint.nodeEnv": "test",
+  "npm.packageManager": "yarn",
+  "eslint.packageManager": "yarn",
+  "search.exclude": {
+    "yarn.lock": true,
+    "/sites/*/.cache": true,
+    "/sites/*/public": true
+  }
+}

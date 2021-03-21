@@ -1,0 +1,4 @@
+# Gatsby build directory
+public/
+
+# ESLint ignores node_modules/ and dotfiles (except .eslintrc.*) by default

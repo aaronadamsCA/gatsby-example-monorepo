@@ -1,0 +1,33 @@
+{
+  "private": true,
+  "workspaces": [
+    "sites/*"
+  ],
+  "scripts": {
+    "lint": "NODE_ENV=test eslint --ext .cjs,.js,.jsx,.mjs,.ts,.tsx .",
+    "lint:fix": "NODE_ENV=test eslint --ext .cjs,.js,.jsx,.mjs,.ts,.tsx --fix .",
+    "format": "prettier --write .",
+    "upgrade": "yarn upgrade-interactive --latest",
+    "clean": "rimraf node_modules/ sites/*/node_modules/"
+  },
+  "engines": {
+    "node": "^14.16.0",
+    "yarn": "^1.22.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.10",
+    "@babel/eslint-parser": "^7.13.10",
+    "@types/node": "^14.14.35",
+    "@types/react": "^17.0.3",
+    "@types/react-dom": "^17.0.2",
+    "@typescript-eslint/eslint-plugin": "^4.18.0",
+    "@typescript-eslint/parser": "^4.18.0",
+    "eslint": "^7.22.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "prettier": "^2.2.1",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.2.3"
+  }
+}

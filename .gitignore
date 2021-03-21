@@ -1,0 +1,22 @@
+# Gatsby cache directory and build directory
+.cache/
+public/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Log directories and files
+logs/
+*.log*
+
+# Dependency directories
+node_modules/
+
+# OS directory attribute files
+.DS_Store
+desktop.ini
+
+# ESLint cache files
+.eslintcache
