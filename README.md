@@ -16,16 +16,16 @@ You need to set `NODE_ENV=test` every time you run ESLint, or `babel-preset-gats
 
   ```sh
   NODE_ENV=test yarn eslint .
-```
+  ```
 
 - To run from a package script:
 
-```json
+  ```json
   "lint": "NODE_ENV=test eslint ."
-```
+  ```
 
 - To configure the ESLint plugin for Visual Studio Code:
 
-```json
+  ```json
   "eslint.nodeEnv": "test"
-```
+  ```
