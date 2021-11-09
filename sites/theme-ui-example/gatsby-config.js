@@ -4,12 +4,5 @@ module.exports = {
   },
   jsxRuntime: "automatic",
   jsxImportSource: "theme-ui",
-  siteMetadata: {
-    title: "Gatsby Example Site",
-  },
-  plugins: [
-    "gatsby-plugin-gatsby-cloud",
-    "gatsby-plugin-theme-ui",
-    "gatsby-plugin-tsconfig-paths",
-  ],
+  plugins: ["@monorepo/gatsby-theme-example"],
 };

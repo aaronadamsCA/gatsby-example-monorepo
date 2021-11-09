@@ -9,10 +9,8 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@monorepo/gatsby-theme-example": "*",
     "gatsby": "4.1.2",
-    "gatsby-plugin-gatsby-cloud": "4.1.0",
-    "gatsby-plugin-theme-ui": "0.12.0",
-    "gatsby-plugin-tsconfig-paths": "1.0.3",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "theme-ui": "0.12.0"
