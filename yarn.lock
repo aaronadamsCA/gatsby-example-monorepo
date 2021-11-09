@@ -1128,7 +1128,7 @@
     core-js-pure "^3.19.0"
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.10.0", "@babel/runtime@^7.10.2", "@babel/runtime@^7.11.2", "@babel/runtime@^7.13.10", "@babel/runtime@^7.15.4":
+"@babel/runtime@^7.10.0", "@babel/runtime@^7.10.2", "@babel/runtime@^7.11.2", "@babel/runtime@^7.13.10", "@babel/runtime@^7.14.0", "@babel/runtime@^7.15.4":
   version "7.16.0"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.16.0.tgz#e27b977f2e2088ba24748bf99b5e1dece64e4f0b"
   integrity sha512-Nht8L0O8YCktmsDV6FqFue7vQLRx3Hb0B37lS5y0jDRqRxlBG4wIJHnf9/bgSE2UyipKFA01YtS+npRdTWBUyw==
@@ -1869,6 +1869,14 @@
     "@theme-ui/css" "0.12.0"
     deepmerge "^4.2.2"
 
+"@theme-ui/color@0.12.0":
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/@theme-ui/color/-/color-0.12.0.tgz#ac48df8f320ae5bf5f50f1f7f0ed9913ae335a8d"
+  integrity sha512-MFO6PkanvexZz3OjTuoFE9NTb+BwoY6P5a91VhtY99K2pl02L8Ash16AC9aADhpHoRClBy+KgyUHQ5Q9akejvw==
+  dependencies:
+    "@theme-ui/css" "0.12.0"
+    polished "^4.0.5"
+
 "@theme-ui/components@0.12.0":
   version "0.12.0"
   resolved "https://registry.yarnpkg.com/@theme-ui/components/-/components-0.12.0.tgz#d1871f4c3e0df20e4f4b5b21abeb31c273c96630"
@@ -2178,7 +2186,14 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react@*":
+"@types/react-dom@17.0.11":
+  version "17.0.11"
+  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-17.0.11.tgz#e1eadc3c5e86bdb5f7684e00274ae228e7bcc466"
+  integrity sha512-f96K3k+24RaLGVu/Y2Ng3e1EbZ8/cVJvypZWd7cy0ofCBaf2lcM46xNhycMZ2xGwbBjRql7hOlZ+e2WlJ5MH3Q==
+  dependencies:
+    "@types/react" "*"
+
+"@types/react@*", "@types/react@17.0.34":
   version "17.0.34"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.34.tgz#797b66d359b692e3f19991b6b07e4b0c706c0102"
   integrity sha512-46FEGrMjc2+8XhHXILr+3+/sTe3OfzSPU9YGKILLrUYbQ1CLQC9Daqo1KzENGXAWwrFwiY0l4ZbF20gRvgpWTg==
@@ -8664,6 +8679,13 @@ platform@^1.3.6:
   version "1.3.6"
   resolved "https://registry.yarnpkg.com/platform/-/platform-1.3.6.tgz#48b4ce983164b209c2d45a107adb31f473a6e7a7"
   integrity sha512-fnWVljUchTro6RiCFvCXBbNhJc2NijN7oIQxbwsyL0buWJPG85v81ehlHI9fXrJsMNgTofEoWIQeClKpgxFLrg==
+
+polished@^4.0.5:
+  version "4.1.3"
+  resolved "https://registry.yarnpkg.com/polished/-/polished-4.1.3.tgz#7a3abf2972364e7d97770b827eec9a9e64002cfc"
+  integrity sha512-ocPAcVBUOryJEKe0z2KLd1l9EBa1r5mSwlKpExmrLzsnIzJo4axsoU9O2BjOTkDGDT4mZ0WFE5XKTlR3nLnZOA==
+  dependencies:
+    "@babel/runtime" "^7.14.0"
 
 posix-character-classes@^0.1.0:
   version "0.1.1"
