@@ -1,13 +1,13 @@
-import { FC } from "react";
+import type { VFC } from "react";
 import { Box, Container, Heading, Paragraph } from "theme-ui";
 
-const IndexPage: FC = () => (
+const IndexPage: VFC = () => (
   <Container>
     <Box as="header">
-      <Heading as="h1">Theme UI Gatsby Example</Heading>
+      <Heading as="h1">Gatsby Example Site</Heading>
     </Box>
     <Box as="main">
-      <Paragraph>This is an example page.</Paragraph>
+      <Paragraph>This is the home page.</Paragraph>
     </Box>
   </Container>
 );

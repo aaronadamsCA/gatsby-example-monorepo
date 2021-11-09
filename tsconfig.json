@@ -1,11 +1,51 @@
 {
+  // Configure `tsc` type checking for compatibility with Babel compilation.
+  //
+  // Generally speaking, Gatsby and Babel do not pay attention to this file.
+  // This configuration only affects type checks run with `yarn tsc`.
+  //
+  // The exception is "paths", which is read by `gatsby-plugin-tsconfig-paths`.
   "compilerOptions": {
-    "target": "ES2020",
-    "moduleResolution": "node",
-    "strict": true,
+    // Must be specified if "paths" is specified
+    "baseUrl": "./",
+
+    // Fix interoperability with ES modules, including synthetic default imports
     "esModuleInterop": true,
-    "skipLibCheck": true,
+
+    // Require case-sensitive imports (just in case)
+    "forceConsistentCasingInFileNames": true,
+
+    // Speed up type checks by saving `tsconfig.tsbuildinfo` file
+    "incremental": true,
+
+    // Enforce constraints that ensure Babel compatibility
+    "isolatedModules": true,
+
+    // Allow JSX in TSX files
     "jsx": "preserve",
-    "sourceMap": true
+
+    // Use Node.js module resolution
+    "moduleResolution": "Node",
+
+    // Don't emit any compiled files from `tsc`, leave this to Babel
+    "noEmit": true,
+
+    // Improve type safety by requiring array index checks
+    "noUncheckedIndexedAccess": true,
+
+    "paths": {
+      // Configure local package paths
+      "@monorepo/*": ["./packages/*/src"]
+    },
+
+    // Skip type checks on `.d.ts` files
+    "skipLibCheck": true,
+
+    // Enable all strict mode type checks
+    "strict": true,
+
+    // Always allow the latest ES features, since Babel can always compile them
+    // (note this appears to do nothing, ESNext features still work without it)
+    "target": "ESNext"
   }
 }

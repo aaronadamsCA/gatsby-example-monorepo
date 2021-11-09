@@ -1,12 +1,11 @@
 module.exports = {
   root: true,
-  parser: "@babel/eslint-parser",
   extends: [
     "eslint:recommended",
     "plugin:react/recommended",
-    "plugin:react-hooks/recommended",
-    "prettier", // Must always come last, since it disables other rules
+    "prettier", // Disables conflicting rules in above configs
   ],
+  parser: "@babel/eslint-parser",
   parserOptions: {
     sourceType: "module",
   },
@@ -16,43 +15,33 @@ module.exports = {
     node: true,
   },
   rules: {
-    "react/prop-types": "off",
+    // Enforce best practices
+    "consistent-return": "error",
+    eqeqeq: ["error", "always", { null: "ignore" }],
+    "no-implicit-globals": "error",
 
-    // https://reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html#eslint
+    // Improve readability
+    quotes: ["error", "double", { avoidEscape: true }],
+
     "react/jsx-uses-react": "off",
     "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off",
   },
   overrides: [
     {
-      files: ["sites/*/gatsby-browser.js"],
-      env: {
-        browser: true,
-      },
-      globals: {
-        ___loader: false,
-        ___emitter: false,
-      },
+      // Make sure we lint all files, not just `.js` files
+      files: ["*.cjs", "*.js", "*.jsx", "*.mjs", "*.ts", "*.tsx"],
     },
     {
       files: ["*.ts", "*.tsx"],
       extends: [
-        "eslint:recommended",
-        "plugin:react/recommended",
-        "plugin:react-hooks/recommended",
         "plugin:@typescript-eslint/recommended",
+        // This ruleset is very slow, you may want to run it at commit time only
         "plugin:@typescript-eslint/recommended-requiring-type-checking",
-        "prettier", // Must always come last, since it disables other rules
       ],
       parserOptions: {
         tsconfigRootDir: __dirname,
-        project: ["./sites/*/tsconfig.json"],
-      },
-      rules: {
-        "react/prop-types": "off",
-
-        // https://reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html#eslint
-        "react/jsx-uses-react": "off",
-        "react/react-in-jsx-scope": "off",
+        project: ["./packages/*/tsconfig.json", "./sites/*/tsconfig.json"],
       },
     },
   ],

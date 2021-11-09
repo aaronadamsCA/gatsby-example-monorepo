@@ -1,6 +1,15 @@
 module.exports = {
-  siteMetadata: {
-    title: "Theme UI Gatsby Example",
+  flags: {
+    FAST_DEV: true,
   },
-  plugins: ["gatsby-plugin-theme-ui", "gatsby-plugin-gatsby-cloud"],
+  jsxRuntime: "automatic",
+  jsxImportSource: "theme-ui",
+  siteMetadata: {
+    title: "Gatsby Example Site",
+  },
+  plugins: [
+    "gatsby-plugin-gatsby-cloud",
+    "gatsby-plugin-theme-ui",
+    "gatsby-plugin-tsconfig-paths",
+  ],
 };

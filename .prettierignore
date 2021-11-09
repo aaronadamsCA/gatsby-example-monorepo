@@ -1,6 +1,9 @@
-# Gatsby cache directory and build directory
-.cache/
-public/
+# Installed dependency directories
+**/node_modules/
 
-# Dependency directories
-node_modules/
+# Yarn install directory
+/.yarn/
+
+# Gatsby build directories
+/sites/*/.cache/
+/sites/*/public/

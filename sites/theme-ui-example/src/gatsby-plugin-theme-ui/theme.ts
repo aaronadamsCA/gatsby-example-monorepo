@@ -1,4 +1,4 @@
-import { Theme } from "theme-ui";
+import type { Theme } from "theme-ui";
 
 export const theme: Theme = {
   layout: {
@@ -14,8 +14,7 @@ export const theme: Theme = {
     secondary: "#609",
   },
   fonts: {
-    body:
-      'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
+    body: '-apple-system, BlinkMacSystemFont, "Segoe UI", "Liberation Sans", sans-serif',
     heading: "inherit",
   },
   text: {
@@ -28,17 +27,15 @@ export const theme: Theme = {
   },
   styles: {
     root: {
-      color: "text",
       bg: "background",
+      color: "text",
       fontFamily: "body",
       fontSize: "100%",
     },
     a: {
       color: "primary",
-      textDecoration: "none",
       ":hover": {
         color: "secondary",
-        textDecoration: "underline",
       },
     },
   },

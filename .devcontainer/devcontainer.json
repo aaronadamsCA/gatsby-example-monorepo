@@ -3,18 +3,16 @@
   "build": {
     "dockerfile": "Dockerfile"
   },
-  "settings": {
-    "terminal.integrated.shell.linux": "/bin/zsh",
-    "remote.containers.copyGitConfig": false
-  },
-  "remoteUser": "node",
-  "postCreateCommand": ".devcontainer/install.sh",
   "extensions": [
     "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode",
-    "github.vscode-pull-request-github",
-    "redhat.vscode-yaml",
+    "mskelton.npm-outdated",
     "visualstudioexptteam.vscodeintellicode"
   ],
-  "forwardPorts": [8000, 40000]
+  "forwardPorts": [8000, 40000],
+  "postCreateCommand": ".devcontainer/install.sh",
+  "remoteUser": "node",
+  "settings": {
+    "remote.containers.copyGitConfig": false
+  }
 }

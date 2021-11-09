@@ -1,19 +1,23 @@
 {
-  "name": "theme-ui-example",
+  "name": "@monorepo/theme-ui-example-site",
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "develop": "INTERNAL_STATUS_PORT=40000 gatsby develop --port 8000",
-    "clean": "gatsby clean",
+    "develop": "cross-env INTERNAL_STATUS_PORT=40000 gatsby develop --port 8000",
     "build": "gatsby build",
-    "serve": "gatsby serve --port 8000"
+    "serve": "gatsby serve --port 8000",
+    "clean": "gatsby clean"
   },
   "dependencies": {
-    "gatsby": "^3.1.1",
-    "gatsby-plugin-gatsby-cloud": "^2.1.0",
-    "gatsby-plugin-theme-ui": "next",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "theme-ui": "next"
+    "gatsby": "4.1.2",
+    "gatsby-plugin-gatsby-cloud": "4.1.0",
+    "gatsby-plugin-theme-ui": "0.12.0",
+    "gatsby-plugin-tsconfig-paths": "1.0.3",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "theme-ui": "0.12.0"
+  },
+  "devDependencies": {
+    "cross-env": "7.0.3"
   }
 }
