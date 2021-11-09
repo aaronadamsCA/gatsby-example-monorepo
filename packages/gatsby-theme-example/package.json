@@ -10,6 +10,7 @@
     "theme-ui": "0.12.0"
   },
   "dependencies": {
+    "@monorepo/components": "*",
     "gatsby-plugin-gatsby-cloud": "4.1.0",
     "gatsby-plugin-theme-ui": "0.12.0"
   },
