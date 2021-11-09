@@ -21,8 +21,8 @@ export const theme: Theme = {
     heading: {
       my: 3,
     },
-    default: {
-      my: 3,
+    paragraph: {
+      mb: 3,
     },
   },
   styles: {
