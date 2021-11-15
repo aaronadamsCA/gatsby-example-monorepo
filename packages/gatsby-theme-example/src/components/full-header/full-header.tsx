@@ -5,7 +5,7 @@ import { Box, Flex, Text } from "theme-ui";
 
 type siteData = { site: { siteMetadata: { title: string } } };
 
-export const Header: VFC = () => {
+export const FullHeader: VFC = () => {
   const { site } = useStaticQuery<siteData>(query);
 
   return (
@@ -53,7 +53,7 @@ export const Header: VFC = () => {
 };
 
 const query = graphql`
-  query Header {
+  query FullHeader {
     site {
       siteMetadata {
         title
