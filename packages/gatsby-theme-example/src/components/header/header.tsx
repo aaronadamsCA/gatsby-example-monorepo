@@ -27,6 +27,9 @@ export const Header: VFC = () => {
           <InternalLink to="/about">About</InternalLink>
         </Text>
         <Text>
+          <InternalLink to="/contact">Contact</InternalLink>
+        </Text>
+        <Text>
           <InternalLink to="/local">Local</InternalLink>
         </Text>
         <Text>
