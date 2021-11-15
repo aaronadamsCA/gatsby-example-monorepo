@@ -1,6 +1,7 @@
 import { InternalLink, Link } from "@monorepo/components";
 import type { VFC } from "react";
 import { Box, Container, Heading, Paragraph } from "theme-ui";
+import { StaticQueryTest } from "../components/static-query-test";
 
 const IndexPage: VFC = () => (
   <Container>
@@ -11,6 +12,7 @@ const IndexPage: VFC = () => (
       <Paragraph>
         This is the home page. It is part of the Gatsby theme package.
       </Paragraph>
+      <StaticQueryTest />
       <Paragraph>
         <Link variant="secondary" onClick={() => alert("Test!")}>
           Open a test alert
