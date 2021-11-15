@@ -34,8 +34,13 @@
     "noUncheckedIndexedAccess": true,
 
     "paths": {
-      // Configure local package paths
-      "@monorepo/*": ["./packages/*/src"]
+      // Configure local packages for barrel imports
+      "@monorepo/components": ["./packages/components/src"],
+
+      // Configure shadowed packages for deep imports
+      "@monorepo/gatsby-theme-example/*": [
+        "./packages/gatsby-theme-example/src/*"
+      ]
     },
 
     // Skip type checks on `.d.ts` files

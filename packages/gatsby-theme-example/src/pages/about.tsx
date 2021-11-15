@@ -3,16 +3,16 @@ import { Box, Container, Heading, Paragraph } from "theme-ui";
 
 import { Header } from "../components/header";
 
-const IndexPage: VFC = () => (
+const AboutPage: VFC = () => (
   <Container>
     <Header />
     <Box as="main">
-      <Heading as="h1">Home Page</Heading>
+      <Heading as="h1">About Page</Heading>
       <Paragraph>
-        This is the home page. It is part of the Gatsby theme package.
+        This is the about page. It is also part of the Gatsby theme package.
       </Paragraph>
     </Box>
   </Container>
 );
 
-export default IndexPage;
+export default AboutPage;

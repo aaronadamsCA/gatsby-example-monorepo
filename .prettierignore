@@ -5,5 +5,5 @@
 /.yarn/
 
 # Gatsby build directories
-/sites/*/.cache/
-/sites/*/public/
+/packages/*/.cache/
+/packages/*/public/

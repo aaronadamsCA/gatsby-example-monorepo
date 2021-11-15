@@ -1,5 +1,5 @@
 # ESLint always ignores `**/node_modules/`, and dotfiles except `.eslintrc.*`
 
 # Gatsby build directories
-/sites/*/.cache/
-/sites/*/public/
+/packages/*/.cache/
+/packages/*/public/

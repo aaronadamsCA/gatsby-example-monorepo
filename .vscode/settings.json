@@ -10,8 +10,8 @@
   "npm.packageManager": "yarn",
   "search.exclude": {
     "/.yarn/**": true,
-    "/sites/*/.cache/": true,
-    "/sites/*/public/": true,
+    "/packages/*/.cache/": true,
+    "/packages/*/public/": true,
     "/yarn.lock": true
   },
   "terminal.integrated.defaultProfile.linux": "zsh",

@@ -2,8 +2,8 @@
 **/node_modules/
 
 # Gatsby build directories
-/sites/*/.cache/
-/sites/*/public/
+/packages/*/.cache/
+/packages/*/public/
 
 # Attribute and cache files
 **/.DS_Store
