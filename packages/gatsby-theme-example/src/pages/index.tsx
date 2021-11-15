@@ -1,4 +1,5 @@
 import { InternalLink, Link } from "@monorepo/components";
+import { StaticImage } from "gatsby-plugin-image";
 import type { VFC } from "react";
 import { Box, Container, Heading, Paragraph } from "theme-ui";
 
@@ -20,6 +21,7 @@ const IndexPage: VFC = () => (
       <Paragraph>
         <InternalLink to="local">Go to the local page</InternalLink>.
       </Paragraph>
+      <StaticImage src="https://picsum.photos/200/300" alt="Random image" />
     </Box>
   </Container>
 );
