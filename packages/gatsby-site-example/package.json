@@ -1,5 +1,5 @@
 {
-  "name": "@monorepo/theme-ui-example-site",
+  "name": "@monorepo/gatsby-site-example",
   "private": true,
   "version": "0.0.0",
   "scripts": {
