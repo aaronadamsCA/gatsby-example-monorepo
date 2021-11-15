@@ -1,10 +1,10 @@
-import { FullHeader } from "@monorepo/gatsby-theme-example/components/full-header";
+import { Header } from "@monorepo/gatsby-theme-example/components/header";
 import type { VFC } from "react";
 import { Box, Container, Heading, Paragraph } from "theme-ui";
 
 const LocalPage: VFC = () => (
   <Container>
-    <FullHeader />
+    <Header />
     <Box as="main">
       <Heading as="h1">Local Page</Heading>
       <Paragraph>
