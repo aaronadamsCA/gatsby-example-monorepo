@@ -4,13 +4,13 @@
   "version": "0.0.0",
   "sideEffects": false,
   "peerDependencies": {
-    "gatsby": "4.1.2",
+    "gatsby": "4.1.5",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "theme-ui": "0.12.0"
   },
   "devDependencies": {
-    "gatsby": "4.1.2",
+    "gatsby": "4.1.5",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "theme-ui": "0.12.0"
