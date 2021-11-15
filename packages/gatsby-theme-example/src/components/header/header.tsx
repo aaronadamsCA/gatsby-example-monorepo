@@ -31,7 +31,7 @@ export const Header: VFC = () => {
         </Text>
         <Text>
           <Link variant="secondary" onClick={() => alert("Test!")}>
-            Alert
+            Test
           </Link>
         </Text>
       </Flex>

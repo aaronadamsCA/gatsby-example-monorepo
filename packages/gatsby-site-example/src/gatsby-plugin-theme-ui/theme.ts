@@ -49,8 +49,11 @@ export const theme: Theme = {
       textDecoration: "none",
       borderBottom: "1px solid",
       borderBottomColor: alpha("primary", 0.2),
-      "&.active, &:active, &:hover": {
+      "&:hover, &:active, &.current": {
         borderBottomColor: "initial",
+      },
+      "&.current": {
+        borderBottomWidth: "2px",
       },
     },
     secondary: {

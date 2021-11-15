@@ -13,7 +13,7 @@ export const InternalLink = forwardRef<HTMLAnchorElement, InternalLinkProps>(
     return (
       <Link
         ref={ref}
-        as={(props) => <GatsbyLink activeClassName="active" {...props} />}
+        as={(props) => <GatsbyLink activeClassName="current" {...props} />}
         {...props}
       />
     );
