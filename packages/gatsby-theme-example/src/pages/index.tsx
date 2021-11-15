@@ -3,7 +3,7 @@ import { Box, Container, Heading, Paragraph } from "theme-ui";
 
 import { Header } from "../components/header";
 
-const IndexPage: VFC = () => (
+const HomePage: VFC = () => (
   <Container>
     <Header />
     <Box as="main">
@@ -15,4 +15,4 @@ const IndexPage: VFC = () => (
   </Container>
 );
 
-export default IndexPage;
+export default HomePage;

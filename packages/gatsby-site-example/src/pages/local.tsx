@@ -7,7 +7,10 @@ const LocalPage: VFC = () => (
     <Header />
     <Box as="main">
       <Heading as="h1">Local Page</Heading>
-      <Paragraph>This page is part of the local site package.</Paragraph>
+      <Paragraph>
+        This page is part of the local site package. It imports the header from
+        the Gatsby theme package.
+      </Paragraph>
     </Box>
   </Container>
 );
