@@ -1,11 +1,11 @@
 import type { VFC } from "react";
 import { Box, Container, Heading, Paragraph } from "theme-ui";
 
-import { Header } from "../components/header";
+import { SiteHeader } from "../components/site-header";
 
 const HomePage: VFC = () => (
   <Container>
-    <Header />
+    <SiteHeader />
     <Box as="main">
       <Heading as="h1">Home Page</Heading>
       <Paragraph>
