@@ -6,7 +6,7 @@ interface siteData {
   site: { siteMetadata: { title: string } };
 }
 
-export const Title: VFC = () => {
+export const SiteTitle: VFC = () => {
   const { site } = useStaticQuery<siteData>(query);
 
   return <Box sx={{ fontWeight: "bold" }}>{site.siteMetadata.title}</Box>;

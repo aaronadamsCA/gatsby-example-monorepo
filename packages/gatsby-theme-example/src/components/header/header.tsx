@@ -3,8 +3,8 @@ import { InternalLink, Link } from "@monorepo/components";
 import type { VFC } from "react";
 import { Flex, Text } from "theme-ui";
 
-const Title = loadable(() => import("./title"), {
-  resolveComponent: ({ Title }) => Title,
+const SiteTitle = loadable(() => import("./site-title"), {
+  resolveComponent: ({ SiteTitle }) => SiteTitle,
 });
 
 export const Header: VFC = () => (
@@ -17,7 +17,7 @@ export const Header: VFC = () => (
       marginBlock: 3,
     }}
   >
-    <Title />
+    <SiteTitle />
     <Flex sx={{ columnGap: 3 }}>
       <Text>
         <InternalLink to="/">Home</InternalLink>
