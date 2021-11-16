@@ -1,3 +1,3 @@
 # Gatsby Example Monorepo
 
-Gatsby sites in a shared development environment deploying to Gatsby Cloud.
+This is an opinionated example of a monorepo for developing Gatsby sites.
