@@ -13,7 +13,7 @@ export const SiteTitle: VFC = () => {
 };
 
 const query = graphql`
-  query Header {
+  query SiteTitle {
     site {
       siteMetadata {
         title
