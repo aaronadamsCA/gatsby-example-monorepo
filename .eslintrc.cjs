@@ -4,6 +4,8 @@ module.exports = {
     "eslint:recommended",
     "plugin:react/recommended",
     "prettier", // Disables conflicting rules in above configs
+    "plugin:import/recommended",
+    "plugin:react-hooks/recommended",
   ],
   parser: "@babel/eslint-parser",
   parserOptions: {
@@ -29,7 +31,7 @@ module.exports = {
   },
   overrides: [
     {
-      // Make sure we lint all files, not just `.js` files
+      // Lint all possible ES/TS files, not just `.js` files
       files: ["*.cjs", "*.js", "*.jsx", "*.mjs", "*.ts", "*.tsx"],
     },
     {
@@ -38,6 +40,7 @@ module.exports = {
         "plugin:@typescript-eslint/recommended",
         // This ruleset is very slow, you may want to run it at commit time only
         "plugin:@typescript-eslint/recommended-requiring-type-checking",
+        "plugin:import/typescript",
       ],
       parserOptions: {
         tsconfigRootDir: __dirname,
@@ -46,6 +49,15 @@ module.exports = {
     },
   ],
   settings: {
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"],
+    },
+    "import/resolver": {
+      typescript: {
+        project: "./packages/*/tsconfig.json",
+      },
+      node: true,
+    },
     react: {
       version: "detect",
     },
