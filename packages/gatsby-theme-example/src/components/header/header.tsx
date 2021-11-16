@@ -1,6 +1,6 @@
 import loadable from "@loadable/component";
 import { InternalLink, Link } from "@monorepo/components";
-import { VFC } from "react";
+import type { VFC } from "react";
 import { Flex, Text } from "theme-ui";
 
 const Title = loadable(() => import("./title"), {

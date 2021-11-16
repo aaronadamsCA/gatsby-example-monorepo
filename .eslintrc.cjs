@@ -17,25 +17,26 @@ module.exports = {
     node: true,
   },
   rules: {
+    // Enforce best practices
     "consistent-return": "error",
     eqeqeq: ["error", "always", { null: "ignore" }],
     "no-implicit-globals": "error",
-    quotes: ["error", "double", { avoidEscape: true }],
-
     "import/extensions": ["error", "never", { json: "always" }],
-    "import/first": "error",
-    "import/newline-after-import": "error",
     "import/no-absolute-path": "error",
-    "import/no-duplicates": "error",
     "import/no-extraneous-dependencies": "error",
     "import/no-mutable-exports": "error",
     "import/no-relative-packages": "error",
     "import/no-self-import": "error",
     "import/no-useless-path-segments": ["error", { noUselessIndex: true }],
-
     "react/jsx-uses-react": "off",
     "react/react-in-jsx-scope": "off",
     "react/prop-types": "off",
+
+    // Improve readability
+    quotes: ["warn", "double", { avoidEscape: true }],
+    "import/first": "warn",
+    "import/newline-after-import": "warn",
+    "import/no-duplicates": "warn",
   },
   overrides: [
     {
@@ -53,6 +54,39 @@ module.exports = {
       parserOptions: {
         tsconfigRootDir: __dirname,
         project: ["./packages/*/tsconfig.json"],
+      },
+      rules: {
+        // Enforce best practices
+        "@typescript-eslint/consistent-type-assertions": [
+          "error",
+          {
+            assertionStyle: "as",
+            objectLiteralTypeAssertions: "allow-as-parameter",
+          },
+        ],
+        "@typescript-eslint/consistent-type-imports": "error",
+        "@typescript-eslint/explicit-function-return-type": [
+          "error",
+          { allowExpressions: true },
+        ],
+        "@typescript-eslint/method-signature-style": "error",
+        "@typescript-eslint/no-dynamic-delete": "error",
+        "@typescript-eslint/no-invalid-this": "error",
+        "@typescript-eslint/no-invalid-void-type": "error",
+        "@typescript-eslint/no-loop-func": "error",
+        "@typescript-eslint/prefer-enum-initializers": "error",
+        "@typescript-eslint/prefer-literal-enum-member": "error",
+        "@typescript-eslint/prefer-optional-chain": "error",
+
+        // Improve readability
+        "@typescript-eslint/array-type": ["warn", { default: "array-simple" }],
+        "@typescript-eslint/consistent-indexed-object-style": "warn",
+        "@typescript-eslint/consistent-type-definitions": ["warn", "interface"],
+        "@typescript-eslint/default-param-last": "warn",
+        "@typescript-eslint/no-confusing-non-null-assertion": "warn",
+        "@typescript-eslint/prefer-for-of": "warn",
+        "@typescript-eslint/prefer-function-type": "warn",
+        "@typescript-eslint/unified-signatures": "warn",
       },
     },
   ],
