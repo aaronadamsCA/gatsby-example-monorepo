@@ -24,6 +24,9 @@
     // Allow JSX in TSX files
     "jsx": "preserve",
 
+    // Allow dynamic imports
+    "module": "ESNext",
+
     // Use Node.js module resolution
     "moduleResolution": "Node",
 
