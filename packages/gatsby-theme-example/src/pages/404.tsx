@@ -1,11 +1,11 @@
 import type { VFC } from "react";
 import { Box, Container, Heading, Paragraph } from "theme-ui";
 
-import { MinimalHeader } from "../components/minimal-header";
+import { Header } from "../components/header";
 
 const NotFoundPage: VFC = () => (
   <Container>
-    <MinimalHeader />
+    <Header />
     <Box as="main">
       <Heading as="h1">Not found</Heading>
       <Paragraph>The requested page could not be found.</Paragraph>
